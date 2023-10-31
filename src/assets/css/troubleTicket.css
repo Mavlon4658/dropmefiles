@@ -1,0 +1,248 @@
+/* 
+    Document   : troubleTicket
+    Created on : 11.11.2012, 1:10:13
+    Author     : Art
+    Description: Purpose of the stylesheet follows.
+*/
+
+#tt-dialog{
+    display: none;
+    position: absolute;
+    width: 580px;
+    height: 330px;
+    top: 250px;
+    left: 50%;
+    margin-left: -500px;
+    background: #e0e1e3;
+    z-index: 999;
+    padding: 20px;
+    color: #8c959a;
+    font-size: 16px;
+    font-family: Calibri, Tahoma, "Trebuchet MS", Arial, Verdana, Helvetica, sans-serif; 
+}
+#tt-dialog fieldset{
+    margin: 20px 0 0 0;
+}
+
+.ui-dialog-titlebar.ui-corner-all {
+    -moz-border-radius-bottomleft: 0px;
+    -webkit-border-bottom-left-radius: 0px;
+    -khtml-border-bottom-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+
+    -moz-border-radius-bottomright: 0px;
+    -webkit-border-bottom-right-radius: 0px;
+    -khtml-border-bottom-right-radius: 0px;
+    border-bottom-right-radius: 0px;
+}
+
+.summary-none {
+    display:none;
+}
+
+.tt-create-form{
+    font-size: 14px;
+}
+.tt-create-form p{
+    padding-left: 20px;
+    color: #DF1C77;
+}
+
+.tt-close{
+    position: absolute;
+    top: 8px;
+    right: 9px;
+    width: 23px;
+    height: 23px;
+    display: block;
+    background: url(../images/exit.png) no-repeat;
+    opacity: 0.7;
+    z-index: 99;
+    transition: all ease 0.3s;
+    cursor:pointer;
+}
+.tt-close:hover{
+    opacity: 1;
+}
+
+
+.tt-create-form .textarea{
+    margin: 0;
+    border: 0;
+    background: none;
+    padding: 0 10px 4px 20px;
+    resize: none;
+    height: 85px;
+    width: 550px;
+    outline: none;
+    background: #ededed;
+    color: #8c959a;
+    font-size: 16px;
+    font-family: Calibri, Tahoma, "Trebuchet MS", Arial, Verdana, Helvetica, sans-serif;
+    border-radius: 0 0 3px 3px;
+    overflow: hidden;
+}
+
+.tt-create-form .textarea-label{
+    clear: both !important;
+    display: block !important;
+    width: 550px;
+    border-radius: 3px 3px 0 0;
+    background: #ededed;
+    color: #abbcc6;
+}
+
+.tt-create-form .row{
+    overflow:hidden;
+    line-height: 45px;
+    margin-bottom: 20px;
+}
+.tt-create-form .row.txta{
+    margin-bottom: 5px;
+}
+.tt-create-form label{
+    color:#ebebeb;
+    display: inline-block;
+    float: left;
+    background: #a5b5bf;
+    font-size: 22px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10px 0 20px;
+    border-radius: 3px 0 0 3px;
+    text-transform: uppercase;
+}
+.tt-create-form .text{	
+    border-radius: 0 3px 3px 0;
+    background: #ededed;
+    width:400px !important;
+    margin:0;
+    padding:0 10px;
+    border:0;
+    color:#555458;
+    line-height:45px;
+    outline:none;
+    font-size: 26px;
+    color:#ccc;
+    width:300px;
+}
+.tt-create-form .text-middle{
+    float:left;
+    border-radius: 0 3px 3px 0;
+    background: #ededed;
+    width:270px;
+    margin:0;
+    padding:0 10px;
+    border:0;
+    color:#ccc;
+    line-height:45px;
+    outline:none;
+    font-size: 26px;
+}
+
+
+.tt-create-form .button,
+.tt-create-form .button-disabled{
+    color:#ebebeb;
+    display: inline-block;
+    float: right;
+    padding-bottom: 3px;
+    background: #a5b5bf;
+    font-size: 22px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 10px;
+    border-radius: 3px;
+    outline:none;
+    border:0;
+    cursor:pointer;
+    opacity: 1;
+    font-family: Calibri, Tahoma, "Trebuchet MS", Arial, Verdana, Helvetica, sans-serif;
+    -webkit-appearance: none;
+}
+.tt-create-form .button-disabled{
+    background: #a5b5bf;
+}
+
+.tt-create-form .button:hover{
+    opacity: 0.7;
+}
+
+.tt-close{
+    color:#86BA0D;
+}
+.tt-in-process{
+    color:#358CB9;
+}
+.tt-expect-receive{
+    color:red;
+}
+
+/**
+ * Pagination
+ */
+
+ul.tt-pager
+{
+    font-size:11px;
+    border:0;
+    margin:0;
+    padding:0;
+    line-height:100%;
+    display:inline;
+}
+
+ul.tt-pager li
+{
+    display:inline;
+}
+
+ul.tt-pager a:link,
+ul.tt-pager a:visited
+{
+    border:solid 1px #86BA0D;
+    /*font-weight:bold;*/
+    color:#555458;
+    padding:1px 6px;
+    text-decoration:none;
+}
+
+ul.tt-pager .page a
+{
+    font-weight:normal;
+}
+
+/*ul.tt-pager a:hover
+{
+    border:solid 1px #0e509e;
+}*/
+
+ul.tt-pager .selected a
+{
+    background:#2e6ab1;
+    color:#FFFFFF;
+    font-weight:bold;
+}
+
+ul.tt-pager .hidden a
+{
+    border:solid 1px #DEDEDE;
+    color:#888888;
+}
+
+/**
+ * Hide first and last buttons by default.
+ */
+ul.tt-pager .first,
+ul.tt-pager .last
+{
+    display:none;
+}
+
+li.goto-next a{
+    border: solid 1px #86BA0D;
+    font-weight: bold;
+    color: #0E509E;
+    padding: 1px 6px;
+    text-decoration: none;
+}
