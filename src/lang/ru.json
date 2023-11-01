@@ -1,3 +1,19 @@
 {
-    "hello": "Привет"
+    "lang": "ru",
+    "logo": "Логотип",
+    "title": "Заголовок",
+    "drop_file": "Перетаскивать <br/> файлы",
+    "start_bot": "Я запустил бота",
+    "submit": "Отправить",
+    "from": "От",
+    "to": "До",
+    "email_placeholder_1": "Электронная почта или номер СМС",
+    "email_placeholder_2": "Имя или адрес электронной почты",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sunt aliquid illo voluptatem maxime deserunt incidunt nobis excepturi explicabo eius!",
+    "text1": "Текст",
+    "text2": "Текст",
+    "text3": "Текст",
+    "upload_file": "чтобы завершить<br /> загрузку",
+    "files": "файлы",
+    "total_size": "общий размер"
 }

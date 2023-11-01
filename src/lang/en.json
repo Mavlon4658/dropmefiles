@@ -1,3 +1,19 @@
 {
-    "hello": "Hello"
+    "lang": "en",
+    "logo": "Logotip",
+    "title": "Title",
+    "drop_file": "Drop <br/> files",
+    "start_bot": "I am started the both",
+    "submit": "Send",
+    "from": "From",
+    "to": "To",
+    "email_placeholder_1": "E-mail or SMS number",
+    "email_placeholder_2": "Name or E-mail",
+    "text": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti sunt aliquid illo voluptatem maxime deserunt incidunt nobis excepturi explicabo eius!",
+    "text1": "Text",
+    "text2": "Text",
+    "text3": "Text",
+    "upload_file": "to complete<br />uploading",
+    "files": "files",
+    "total_size": "total size"
 }
