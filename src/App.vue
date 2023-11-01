@@ -2,7 +2,9 @@
   <div>
     <div class="head">
       <div class="container">
-        <div class="logo">{{$t('logo')}}</div>
+        <div class="logo">
+          <img src="@/assets/images/logotip.svg" alt="">
+        </div>
         <div class="title">{{$t('title')}}</div>
         <div class="lang">
           <button @click="e18n.locale.value = 'ru'" :class="`left_btn ${$t('lang') == 'ru' ? 'active' : ''}`">RU</button>
@@ -17,8 +19,7 @@
         <div class="main">
           <div class="loader fonly">
             <div class="utext tfonly">
-              <b v-html="$t('drop_file')"></b
-              >
+              <b v-html="$t('drop_file')"></b>
             </div>
             <div class="bg">
               <div class="arrow"></div>
@@ -122,7 +123,7 @@
             </div>
           </div>
           
-          <div class="input_line">
+          <div class="input_line last">
             <div id="error_from" class="input_error">
               <span class="sms"
                 >Name has invalid characters<br />Only letters, digits and
@@ -131,23 +132,16 @@
               <span class="email">Invalid e-mail address</span>
             </div>
             <label for="from" id="from_txt">{{$t('from')}}:</label>
-            <input
-              type="text"
-              name="from"
-              value=""
-              id="send_from"
-              maxlength="64"
-              :placeholder="$t('email_placeholder_2')"
-            />
+            <textarea id="send_from" :placeholder="$t('email_placeholder_2')"></textarea>
           </div>
 
           <div class="checkbox">
-            <input type="checkbox" id="checkbox_form">
+            <input type="checkbox" v-model="checkbox" id="checkbox_form">
             <label for="checkbox_form">
               <span>{{$t('start_bot')}}</span>
             </label>
           </div>
-          <button class="submit">{{$t('submit')}}</button>
+          <button :class="`submit ${!checkbox ? 'disabled' : ''}`" :disabled="!checkbox">{{$t('submit')}}</button>
         </div>
       </div>
     </div>
@@ -156,7 +150,9 @@
       <div class="foot_text">
         <div class="copy">&copy; 2023</div>
         <div class="text">{{$t('text')}}</div>
-        <div class="logo">{{$t('logo')}}</div>
+        <div class="logo">
+          <img src="@/assets/images/logotip.svg" alt="">
+        </div>
       </div> 
       <div class="container">
         <div class="right_text">
@@ -183,7 +179,8 @@ export default {
   data () {
     return {
       files: [],
-      file: null
+      file: null,
+      checkbox: false
     }
   },
   computed: {
