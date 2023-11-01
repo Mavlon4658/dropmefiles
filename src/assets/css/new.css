@@ -72,6 +72,11 @@ fieldset{
     width: 100px;
 }
 
+.head .container .logo img {
+    width: 100%;
+    height: auto;
+}
+
 .head .container .title {
     font-size: 32px;
     font-family: CalibriBold, Tahoma, Helvetica, sans-serif;
@@ -2913,6 +2918,11 @@ video:-moz-full-screen{ max-height: 100% !important; outline: none !important; }
     font-family: CalibriBold, Tahoma, Helvetica, sans-serif;
     color: white;
     width: 100px;
+}
+
+.foot .logo img {
+    width: 100%;
+    height: auto;
 }
 
 .foot .container {
